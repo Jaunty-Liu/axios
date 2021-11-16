@@ -38,6 +38,18 @@
                 console.log(response);
             });
         }
+        btn[2].onclick=function(){
+            axios({
+                method:'PUT',
+                url: 'http://localhost:3000/posts/3',
+                data:{
+                    title:"nanananaBatman",
+                    author:"DICK"
+                }
+            }).then(response=>{
+                console.log(response);
+            });
+        }
     </script>
 </body>
 </html>
